@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+  <link href="./css/demo.css" rel="stylesheet" type="text/css"/>
+  <title>Document</title>
+  <link>
+</head>
+<body>
+  <article class="mapWrap">
+    <div class="mask">
+      <header>
+        <div class="headCenter">
+          成都市武侯区神仙树
+        </div>
+        <div class="imgBanner">
+          <span>0</span>
+          <img src="./ling.png"/>
+        </div>
+      </header>
+      <div class="leftNav">
+        <div class="d1">
+          <div class="dtop">xxx</div>
+          <div class="ddown">
+            <div class="downleft">
+              <div id="main" cslass="main" style="width: 150px;height:130px;"></div>
+            </div>
+            <div class="downright">
+              <div class="dotxt">
+                <span class="txtTitle">xxx</span>
+                <span class="txtNumber">0</span>
+              </div>
+              <div class="dotxt">
+                <span class="txtTitle">xxx</span>
+                <span class="txtNumber">0</span>
+              </div>
+              <div class="dotxt">
+                <span class="txtTitle">xxx</span>
+                <span class="txtNumber">0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d1">
+          <div class="dtop">xxx</div>
+          <div class="ddown">
+            <div class="downleft">
+              <div id="main1" cslass="main" style="width: 150px;height:130px;"></div>
+            </div>
+            <div class="downright">
+              <div class="dotxt">
+                <span class="txtTitle">未办结</span>
+                <span class="txtNumber">0</span>
+              </div>
+              <div class="dotxt">
+                <span class="txtTitle">已办结</span>
+                <span class="txtNumber">0</span>
+              </div>
+              <div class="dotxt">
+                <span class="txtTitle">今日新增</span>
+                <span class="txtNumber">0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d1">
+          <div class="dtop">xxx</div>
+          <div class="ddown">
+            <div class="downleft">
+              <div id="main2" cslass="main" style="width: 150px;height:130px;"></div>
+            </div>
+            <div class="downright">
+              <div class="dotxt">
+                <span class="txtTitle">待回复</span>
+                <span class="txtNumber">1</span>
+              </div>
+              <div class="dotxt">
+                <span class="txtTitle">已办结</span>
+                <span class="txtNumber">8</span>
+              </div>
+              <div class="dotxt">
+                <span class="txtTitle">今日新增</span>
+                <span class="txtNumber">2</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d2">
+          <div class="d2_dtop">xxx</div>
+          <div class="d2_ddown">
+            <div id="chart1" cslass="main" style="width:280px;height:130px;"></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="currentLocation">
+        <span>当前位置: 🚏XXX社区</span>
+      </div>
+
+      <div class="searchBanner">
+        <input class="sinput" type="text" placeholder="请输入">
+        <img class="simg" src="./search.png"/>
+      </div>
+
+      <div class="rightNav">
+        <div class="rdiv1">
+          <div class="dtop">xxx</div>
+          <div class="rdown1">
+            <div class="yel1">
+              <div class="tip"><div class="txtop">9.34</div><div class="txtdown">面积/km3</div></div>
+              <div class="tip"><div class="txtop">10</div><div class="txtdown">网格/个</div></div>
+              <div class="tip"><div class="txtop">9</div><div class="txtdown">小区/个</div></div>
+            </div>
+            <div class="yel2">
+              <div class="tip"><div class="txtop">10</div><div class="txtdown">党组织/个</div></div>
+              <div class="tip"><div class="txtop">34</div><div class="txtdown">党员/个</div></div>
+              <div class="tip"><div class="txtop">13</div><div class="txtdown">社区人员/人</div></div>
+            </div>
+            <div class="yel3">
+              <div class="tip"><div class="txtop">1</div><div class="txtdown">民警/人</div></div>
+              <div class="tip"><div class="txtop">2</div><div class="txtdown">网格员/人</div></div>
+              <div class="tip"><div class="txtop">8</div><div class="txtdown">兼职网格员/人</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="rdiv2">
+          <div class="rd_dtop">实有房屋</div>
+          <div class="rdown2">
+            <div class="rdownleft">
+              <div id="mainRing1" cslass="main" style="width:140px;height:110px;"></div>
+            </div>
+            <div class="rdownright">
+              <div id="mainRing3" cslass="main" style="width:140px;height:110px;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="rdiv3">
+          <div class="rd_dtop">实有人口</div>
+          <div class="rdown3">
+            <div class="rdown2">
+              <div class="rdownleft">
+                <div id="mainRing2" cslass="main" style="width:140px;height:110px;"></div>
+              </div>
+              <div class="rdownright">
+                <div id="mainRing4" cslass="main" style="width:140px;height:110px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rdiv4">
+          <div class="rd_dtop">实有单位</div>
+          <div class="rdown4">
+            <div class="tip"><div class="txtop">1</div><div class="txtdown">学校</div></div>
+            <div class="tip"><div class="txtop">12</div><div class="txtdown">商家</div></div>
+            <div class="tip"><div class="txtop">3</div><div class="txtdown">场所</div></div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footCenter">
+          <div class="centerBanner">
+            <div class="jianBanner1"></div>
+            <div class="jianBanner11">
+              <div class="jianwrap">
+                <div class="jian"></div>
+                <div class="cbanner1">事件<br>上报</div>
+              </div>
+              <div class="datetxt1">06:00</div>
+            </div>
+            <div class="jianBanner11">
+              <div class="jianwrap">
+                <div class="jian"></div>
+                <div class="cbanner2">数据<br>新增</div>
+              </div>
+              <div class="datetxt2">07:00</div>
+            </div>
+            <div class="jianBanner11">
+              <div class="jianwrap">
+                <div class="jian"></div>
+                <div class="cbanner3">数据<br>新增</div>
+              </div>
+              <div class="datetxt3">08:00</div>
+            </div>
+            <div class="jianBanner11">
+              <div class="jianwrap">
+                <div class="jian"></div>
+                <div class="cbanner4">数据<br>新增</div>
+              </div>
+              <div class="datetxt4">09:00</div>
+            </div>
+            <div class="jianBanner11">
+              <div class="jianwrap">
+                <div class="jian"></div>
+                <div class="cbanner5">数据<br>新增</div>
+              </div>
+              <div class="datetxt5">10:00</div>
+            </div>
+            <div class="jianBanner11">
+              <div class="jianwrap">
+                <div class="jian"></div>
+                <div class="cbanner6">数据<br>新增</div>
+              </div>
+              <div class="datetxt6">11:00</div>
+            </div>
+            <div class="jianBanner11">
+              <div class="jianwrap">
+                <div class="jian"></div>
+                <div class="cbanner7">数据<br>新增</div>
+              </div>
+              <div class="datetxt7">12:00</div>
+            </div>
+            <div class="jianBanner2"></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </article>
+  <script src="js/index.js"></script>
+  <script src="js/chart.js"></script>
+  <script src="js/ring.js"></script>
+</body>
+</html>
